@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Sumatra Earthquake (2011) - 9.1 Magnitude</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Sumatra1.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Sumatra2">
+				 
+				 <h5>Date: December 26, 2011</h5>
+				 <h5>Time: 05:46 UTC (14:46 in local time)</h5>
+				 <h5>Epicenter: West coast of Northern, Sumatra</h5>
+				 <h5>Summary of Damages: As a result of the earthquake, a tsunami occur. First waves are around 30 meters in 20 minutes, killing more than 100,000 people and ruining the city. Continuing, the tsunami struck the coasts of Thailand, India and Sri Lanka, killing tens of thousands more. A total of nearly 230,000 people have died.</h5>
+			</div>
+
+			<div class ="symbol1-Sumatra2">
+				<a href="{% url 'tohoku/' %}" class="symbol1-Sumatra2"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Sumatra2">
+				<a href="{% url 'greatalaska/' %}" class="symbol2-Sumatra2"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

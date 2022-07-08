@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EQKnows</title>
+</head>
+    <body>
+        <form name="myForm" id="Review" method = "POST">
+                <h2><center>Rescue Form</center></h2>
+
+                <fieldset>
+                <legend>Personal Information</legend>
+                    <label>First Name: </label>
+                        <input 
+                            type="text"
+                            id="first_name"
+                            name="first_name"
+                            placeholder="Enter your first name here."
+                            required/>
+                            
+                    <br><br>
+                    <label>Last Name: </label>
+                        <input 
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            placeholder="Enter your surname here."
+                            required/>
+
+                    <br><br>
+                    <label>Location: </label>
+                        <input 
+                            type="text"
+                            id="location" 
+                            name="location"
+                            placeholder="Enter your location"
+                            required/>
+
+                    <br><br>
+                    <label>Phone Number: </label>
+                        <input 
+                            type="text"
+                            id="number" 
+                            name="number"
+                            placeholder="+639-00-000-0000" 
+                            required/>
+
+                    <!-- <br><br>
+                    <label>Date:</label>
+                        <input 
+                            type="text" 
+                            name="date" 
+                            id="date"
+                            placeholder="mm--dd--yyyy"
+                            required/>
+
+                    <br><br>
+                    <label>Time:</label>
+                        <input 
+                            type="text" 
+                            name="time" 
+                            id="time"
+                            placeholder="00:00"
+                            required/>
+
+                    <br><br>
+                    <label>Type of Disaster:</label>
+                        <input 
+                            type="checkbox"
+                            id="checkbox_disaster1" 
+                            name="checkbox_disaster"
+                            value="Earthquake"> Earthquake
+                        <input 
+                            type="checkbox"
+                            id="checkbox_disaster2" 
+                            name="checkbox_disaster"
+                            value="Fire"> Fire
+                        <input 
+                            type="checkbox"
+                            id="checkbox_disaster3" 
+                            name="checkbox_disaster"
+                            value="Flashflood"> Flash Flood
+                        <input 
+                            type="checkbox"
+                            id="checkbox_disaster4" 
+                            name="checkbox_disaster"
+                            value="Landslide"> Landslide
+                        <input 
+                            type="checkbox"
+                            id="checkbox_disaster5" 
+                            name="checkbox_disaster"
+                            value="Tsunami"> Tsunami
+                    <br><br>
+                    <label>Number of casualties:</label>
+                        <input 
+                            type="number" 
+                            id="victim" 
+                            name = "victim" 
+                            min="1"
+                            max="50"
+                            required>
+                        
+                    <br><br>
+                    <label>Equipments Needed:</label>
+                        <input 
+                            type="checkbox"
+                            id="checkbox_equipment1" 
+                            name="checkbox_equipment"
+                            value="Ambulance"> Ambulance
+                        <input 
+                            type="checkbox"
+                            id="checkbox_equipment2" 
+                            name="checkbox_equipment"
+                            value="Crane"> Crane
+                        <input 
+                            type="checkbox"
+                            id="checkbox_equipment3" 
+                            name="checkbox_equipment"
+                            value="Firstaid"> First Aid
+                        <input 
+                            type="checkbox"
+                            id="checkbox_equipment4" 
+                            name="checkbox_equipment"
+                            value="Firetruck"> Fire Truck
+                        <input 
+                            type="checkbox"
+                            id="checkbox_equipment5" 
+                            name="checkbox_equipment"
+                            value="Helicopter"> Helicopter
+                        <input 
+                            type="checkbox"
+                            id="checkbox_equipment6" 
+                            name="checkbox_equipment"
+                            value="Rescue Boats"> Rescue Boats -->
+                </fieldset>
+                
+                <input type="submit" id="btnConfirm" name="btnConfirm" value="Confirm" />
+                {% csrf_token %}
+           </form>
+
+           <hr>
+           <table id="reviewTable">
+                {% for item in customer_datalist%}
+               <tr>
+                   <td>{{forloop.counter}}: {{item.last_name}}, {{item.first_name}}, {{item.location}}, {{item.phone}}</td>
+               </tr>
+               {% endfor %}
+           </table>
+    </body>
+</html>

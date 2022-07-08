@@ -1,0 +1,55 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+		<aside class="box1">
+			<div class="description0">
+				<h2>Landslide</h2>
+			</div>
+
+			<div class="divider1">
+				<img 
+					class="image-Definition" 
+					src="{% static 'Images/Landslide.webp'%}"
+					height="410px"
+					width="450px">
+			</div>
+
+			<div class="meaning-Definition">
+				 
+				 <h5>Landslides are one of a major hazard around the world that are often caused by strong ground movements. It includes various ground movements such as rockfalls, failure of deep slopes, and shallow debris flows. Earthquakes often cause landslides, causing serious and even catastrophic damages to homes. </h5>
+
+				 <h5>Earthquake-initiated ground movements can have two types of effects:</h5>
+
+				 	<h5>&nbsp;&nbsp;Direct effects<hr></h5>
+				 		<h5>Which is the burial of buildings or crushing of vehicles caused by ground movements, damage of building, communication networks, etc.</h5>
+
+				 	<h5>&nbsp;&nbsp;Indirect effects<hr></h5>
+				 		<h5>Which is the obstruction of roads with debris from ground movements can prevent victims providing assistance to health ceters.</h5>
+			</div>	
+		</aside>
+{%endblock%}

@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description3">
+				<h2>Ten Deadliest Earthquake</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 2008: Sichuan, China</h3>
+			</div>
+
+			<div  class="image2">
+				<img 
+					class="image2" 
+					src="{% static 'Images/Sichuan.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-2008-Sichuan">
+				 
+				 <h5>Date: May 12, 2008</h5>
+				 <h5>Time: 06:28 UTC (14:28 in local time) </h5>
+				 <h5>Epicenter: Wengchuan County, northwest of provincial capital of Chengdu</h5>
+				 <h5>Magnitude: 7.9  </h5>
+				 <h5>Summary of Damages: 90,000 were killed and 363,000 are injured. 15 million homes are destroyed and 20 billion US dollars are total of destroyed infrastructures.</h5>
+			</div>
+
+			<div class ="symbol1-2008-Sichuan">
+				<a href="{% url 'turkmenistan/' %}" class="symbol1-2008-Sichuan"><b> ◄ Back</b></a>
+			</div>
+
+			<div class="symbol2-2008-Sichuan">
+				<a href="{% url 'kashmir/' %}" class="symbol2-2008-Sichuan"><b>Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

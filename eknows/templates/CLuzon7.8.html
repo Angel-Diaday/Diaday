@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+
+		<aside class="box2">
+			<div class="description2">
+				<h2>Top Ten Strongest Earthquake to hit the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1990: Magnitude 7.8 in Central Luzon</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/CLuzon.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Magnitude78">
+				<h5>Date and Time: July 16, 1990, 4:26 PM PST</h5>
+				<h5>Epicenter: Near Rizal Town, North East of Cabanatuan</h5>
+				<h5>Description: A 7.8 jolted to the Luzon, affecting the northern and central Luzon including southern Luzon and Manila. 23 provinces are severely affected but the most affected is the City of Baguio.</h5>
+				<h5>Damages: 2,412 deaths, 321 are missing and 3,513 are injured. In terms of structure, 25,305 are completely destroyed and 77, 429 are partly damaged. One of the infrastructures that has been severely damaged is the famous Hyatt Hotel. 695,000 US dollars are the total damages and losses.</h5>
+			</div>
+
+			<div class ="symbol1-Magnitude78">
+				<a href="{% url 'mindanao8/' %}" class="symbol1-Magnitude78"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Magnitude78">
+				<a href="{% url 'luzon7.5/' %}" class="symbol2-Magnitude78"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

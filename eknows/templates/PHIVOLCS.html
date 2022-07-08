@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content3">
+			<h4>What should we do when a earthquake occurs?</h4>
+			<ul><a href="{% url 'before/' %}" class="aside_content30">Before</a></ul>
+			<ul><a href="{% url 'during/' %}" class="aside_content30">During</a></ul>
+			<ul><a href="{% url 'after/' %}" class="aside_content30">After</a></ul>
+
+			
+
+			<h4>What kind of essential needs should I bring?</h4>
+			<ul><a href="{% url 'ekit/' %}" class="aside_content30">Emergency Kit</a></ul>
+			<ul><a href="{% url 'aidkit/' %}" class="aside_content30">First Aid Kit</a></ul>
+
+		
+			<h4>Government departments that is suppposed to be in charge of disaster</h4>
+			<ul><a href="{% url 'ndrrmc/' %}" class="aside_content30">NDRRMC</a></ul>
+			<ul><a href="{% url 'pagasa/' %}" class="aside_content30">PAGASA</a></ul>
+			<ul><a href="{% url 'phivolcs/' %}" class="aside_content30">PHIVOLCS</a></ul>
+			<ul><a href="{% url 'denr/' %}" class="aside_content30">DENR</a></ul>
+			<ul><a href="{% url 'dost/' %}" class="aside_content30">DOST</a></ul>
+			<ul><a href="{% url 'afp/' %}" class="aside_content30">AFP</a></ul>
+		</div>
+		<aside class="box3">
+			<div class="image-PHIVOLCS">
+				<img 
+					class="image-PHIVOLCS" 
+					src="{% static 'Images/PHIVOLCS.webp'%}"
+					height="200px"
+					width="500px">
+			</div>
+			<div class="meaning-PHIVOLCS">
+				 <h5>Philippine Institute Volcanology and Seismology<hr></h5>
+			</div>
+				
+			<div class=text1-PHIVOLCS>
+				<h5>Date Founded: September 17, 1984</h5>
+				<h5>Executive Director: USec. Dr. Renato U. Solidum Jr.</h5>
+				<h5>Headquarters: PHIVOLCS Building, C.P Garcia Ave., Diliman, Quezon City</h5>
+				<h5>Hotlines: +632 8426-1468 up to 79</h5>
+				<h5>Website: <a href="https://www.phivolcs.dost.gov.ph/index.php" target="_blank">https://www.phivolcs.dost.gov.ph/index.php</a></h5>
+			</div>
+
+			<div class="text2-PHIVOLCS">
+				<h5>PHILVOLCS is a institute of the Department of Science and Technology (DOST) that informs the public about volcanic eruptions, earthquakes, tsunami and other related geotectonic phenomena. With the use of instruments like seismograph and richter scale, they measure how the earthquake strong shaking with the intensity in neighboring province. Also, they also give information about volcanic eruptions especially those fumarolic activity and felt earthquakes. </h5>
+
+				<h5>PHILVOLCS can assume different causes of earthquakes. They may be a suspected volcanic eruptions or bumping of the tectonic under the land. REDAS (Rapied Earthquake Damage Assessment System) is a software developed by PHILVOCS last 2002. With this software, it can simulate earthquake hazards, landslides, and tsunami. Also it compute earthquake impacts in terms of casualties and economic loss.</h5>
+			</div>
+		</aside>
+{%endblock%}

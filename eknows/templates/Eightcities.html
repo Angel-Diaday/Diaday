@@ -1,0 +1,40 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box-Top-Eight">
+			<div class="description-Top-Eight">
+				<h2>Top Eight Most Disaster Prone Cities in Philippines</h2>
+			</div>
+
+			<div class="divider-Top-Eight" class="image-Top-Eight">
+				<img
+					class="image-Top-Eight" 
+					src="I{% static 'Images/Eightcity.webp'%}"
+					height="430px"
+					width="300px">
+			</div>
+
+			<div class="meaning-Top-Eight">
+				<h4>Philippines is in the range of Pacific Ring of Fire, where they are prone to different natural disasters. Base on the research conducted by Verisk Maplecroft, eight out of ten most prone cities can be found in the Philippines.</h4>
+
+				<h4>During the 5th Annual National Hazard Risk Atlas, they checked 1,300 cities and analyzed to come up of 100 cities has the greatest exposure to the natural disaster. 21 cities of them are located in the Philippines. 16 cities in China, 11 cities in Japan and eight cities in Bangladesh.</h4>
+
+				<h4>In the 2nd spot, is the Tuguegarao City in Cagayan. 3rd spot is the Lucena City in Quezon Province. 4th spot is the entire Metro Manila. 5th spot is the San Fernando, Pampanga. 6th city is the Cabanatuan, Nueva Ecija. 7th spot is the Batangas. 9th spot is the San Carlos with no specific povince and lastly, in 10th place is the Naga City in Camarines Sur.</h4>
+
+				<h4>Meanwhile, the 1st spot is in the Port Villa in Vanuatu and the 8th spot is the capital of Taiwan, which is the Taipei.</h4>
+			</div>
+		</aside>
+{%endblock%}

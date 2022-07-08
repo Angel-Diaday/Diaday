@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+	<aside class="box2">
+			<div class="description3">
+				<h2>Ten Deadliest Earthquake</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1920: Haiyuan, China</h3>
+			</div>
+
+			<div  class="image2">
+				<img 
+					class="image2" 
+					src="{% static 'Images/Haiyuan.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-2004-Indian">
+				 
+				 <h5>Date: December 16, 1920</h5>
+				 <h5>Time: 12:05 UTC (19:05 in local time) </h5>
+				 <h5>Epicenter: West coast of Sumatra, India</h5>
+				 <h5>Magnitude: 7.8 </h5>
+				 <h5>Summary of Damages: The tsunami severely damaged the Indonesia and other countries including seven cities. The city of Xiji and Sujiahe was completely buried in a landslide. An estimated 200,000 people have died in the disaster</h5>
+			</div>
+
+			<div class ="symbol1-2004-Indian">
+				<a href="{% url 'indianocean/' %}" class="symbol1-2004-Indian"><b> ◄ Back</b></a>
+			</div>
+
+			<div class="symbol2-2004-Indian">
+				<a href="{% url 'kanto/' %}" class="symbol2-2004-Indian"><b> Next ► </b></a>
+			</div>
+			</div>		
+{%endblock%}

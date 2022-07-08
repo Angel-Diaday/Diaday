@@ -1,0 +1,45 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content3">
+			<h4>What should we do when a earthquake occurs?</h4>
+			<ul><a href="{% url 'before/' %}" class="aside_content30">Before</a></ul>
+			<ul><a href="{% url 'during/' %}" class="aside_content30">During</a></ul>
+			<ul><a href="{% url 'after/' %}" class="aside_content30">After</a></ul>
+
+			
+
+			<h4>What kind of essential needs should I bring?</h4>
+			<ul><a href="{% url 'ekit/' %}" class="aside_content30">Emergency Kit</a></ul>
+			<ul><a href="{% url 'aidkit/' %}" class="aside_content30">First Aid Kit</a></ul>
+
+			
+
+			<h4>Government departments that is suppposed to be in charge of disaster</h4>
+			<ul><a href="{% url 'ndrrmc/' %}" class="aside_content30">NDRRMC</a></ul>
+			<ul><a href="{% url 'pagasa/' %}" class="aside_content30">PAGASA</a></ul>
+			<ul><a href="{% url 'phivolcs/' %}" class="aside_content30">PHIVOLCS</a></ul>
+			<ul><a href="{% url 'denr/' %}" class="aside_content30">DENR</a></ul>
+			<ul><a href="{% url 'dost/' %}" class="aside_content30">DOST</a></ul>
+			<ul><a href="{% url 'afp/' %}" class="aside_content30">AFP</a></ul>
+		</div>
+		<aside 
+			class="box3">
+			<div class="description-After" class="divider-After">
+				<h2>What to do after an earthquake?</h2>
+				<p class="divider-After"></p>
+			</div>
+
+			<div class="meaning-After">
+				 <h5>• Check yourself first if you are have scratches or injuries then apply the first aid needed.</h5>
+				 <h5>• Check your surroundings for other hazards and control them, such as possible collapse, fire and chemical spills.</h5>
+				 <h5>• Check to the cracks and damages of the foundation of the building or in your home.</h5>
+				 <h5>• Turn on radio or battery operated device to listen in emergency announcements. You can also check through the internet.</h5>
+				 <h5>• Keep the streets free from the the disturbances, in case for emergency vehicles.</h5>
+				 <h5>• Injured victims shouldn't move from one place to another to prevent from the future injuries. Call a help immediately, especially if it is a serious injury.</h5>
+				 <h5>• Make plan on how to evacuate people in a safe place incase there is a strong aftershocks or a tsunami alert.</h5>
+				 <h5>• Prepare for possible aftershocks. If occurs, find a safe spot temporarily.</h5>
+				 <h5>• Stay calm and help people.</h5>
+			</div>
+		</aside>
+{%endblock%}

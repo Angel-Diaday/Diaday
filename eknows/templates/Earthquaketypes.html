@@ -1,0 +1,62 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+	<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+		<aside class="box1">
+			<div class="descriptionTP1">
+				<h2>Types of Earthquake</h2>
+			</div>
+
+			<div class="dividerTP1" class="imageTP1">
+				<img 
+					class="imageTP1" 
+					src="{% static 'Images/Typesofearthquake.webp'%}"
+					height="420px"
+					width="450px">
+			</div>
+
+			<div><h4 class="meaningTP1">Tectonic Earthquake<hr></h4></div>
+			<div>
+				<h5 class="textTP1">It occurs when the earth's crust breaks due to geological forces on rocks and adjoining plates that cause physical and chemical changes.</h5>
+			</div>
+			
+			<div><h4 class="meaningTP1">Volcanic Earthquake<hr></h4></div>
+			<div>
+				<h5 class="textTP1">An earthquake results from tectonic forces which occur in conjunction with volcanic activity.</h5>
+			</div>
+
+			<div><h4 class="meaningTP1">Explosive Earthquake<hr></h4></div>
+			<div>
+				<h5 class="textTP1">Small earthquakes in underground caverns and mines are caused by seismic waves produced from the explosion of rock on the surface.</h5>
+			</div>
+			
+			<div><h4 class="meaningTP1">Explosion Earthquake<hr></h4></div>
+			<div>
+				<h5 class="textTP1">An earthquake is the result of the detonation of a nuclear and/or chemical device.</h5>
+			</div>
+		</aside>
+{%endblock%}

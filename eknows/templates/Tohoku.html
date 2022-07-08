@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Tohoku Earthquake (2011) - 9.1 Magnitude</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Tohoku.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Tohoku">
+				 
+				 <h5>Date: March 11, 2011</h5>
+				 <h5>Time: 05:46 UTC (14:46 in local time)</h5>
+				 <h5>Epicenter: Coast of Fukushima, about 200 kilometers north of Tokyo.</h5>
+				 <h5>Summary of Damages: The earthquake triggered a massive tsunami with waves up to 40.5 meters high. Airports, roads, and railroads were destroyed. 127,290 buildings are totally collapsed, 272,788 buildings are half collapsed, and 747,989 buildings were partially damaged and a dam collapsed.</h5>
+			</div>
+
+			<div class ="symbol1-Tohoku">
+				<a href="{% url 'kamchatka/' %}" class="symbol1-Tohoku"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Tohoku">
+				<a href="{% url 'sumatra2/' %}" class="symbol2-Tohoku"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

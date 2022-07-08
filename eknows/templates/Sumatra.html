@@ -1,0 +1,48 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Sumatra Earthquake (2012) - 8.6 Magnitude</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Sumatra.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Sumatra">
+				 
+				 <h5>Date: April 11, 2012</h5>
+				 <h5>Time: 08:38 UTC (15:38 in local time)</h5>
+				 <h5>Epicenter: 215 kilometers, southwest of Padang, West Sumatra</h5>
+				 <h5>Summary of Damages: Unusually strong earthquakes on the plate, a largest strike-slip earthquakes ever recorded. It occurred very far from the place of residence and did not have a destructive tsunami. Ten deaths and 12 injuries were reported. Most of them were caused by panic and or heart attack.</h5>
+			</div>
+
+			<div class="symbol-Sumatra">
+				<a href="{% url 'assamtibet/' %}" class="symbol-Sumatra"><b> Next ► </b></a>
+			</div>
+		</div>
+		</aside>
+{%endblock%}

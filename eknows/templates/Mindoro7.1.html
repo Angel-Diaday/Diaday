@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+
+		<aside class="box2">
+			<div class="description2">
+				<h2>Top Ten Strongest Earthquake to hit the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1994: Magnitude 7.1 in Mindoro</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Mindoro.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Magnitude71">
+				<h5>Date and Time: November 15, 1994, 03:15 AM PST</h5>
+				<h5>Epicenter: Northwest of Baco, Mindoro</h5>
+				<h5>Description: In Oriental Mindoro, earthquake and tsunami occur together with the 5 minutes interval. Tsunami struck to the northern and eastern shoreline of Mindoro island.</h5>
+				<h5>Damages: A tsunami killed 78 people, 430 are injured and 7,566 houses in 13 municipalities are damaged. 24 bridges and numerous fishing boats are also destroyed. Most of the people died are the children under 10 years old and senior citizens.</h5>
+			</div>
+
+			<div class ="symbol1-Magnitude71">
+				<a href="{% url 'bohol7.2/' %}" class="symbol1-Magnitude71"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Magnitude71">
+				<a href="{% url 'cvisayas/' %}" class="symbol2-Magnitude71"> <b>Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}	

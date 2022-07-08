@@ -1,0 +1,50 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Top Ten Strongest Earthquake to hit the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 2013: Magnitude 7.2 in Bohol</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Bohol1.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Magnitude72">
+				<h5>Date and Time: October 15, 2013, 8:12 AM PST</h5>
+				<h5>Epicenter: Island Province of Bohol</h5>
+				<h5>Description: Three weeks after the Typhoon Yolanda, (International name: Typhoon Haiyan,) a 7.2 magnitude earthquake occur. It was the deadliest earthquake in 23 years. It can compare it to 32 Hiroshima bombs exploded.</h5>
+				<h5>Damages: Since the province is not adjusted well from the typhoon, the earthquake affected 1.2 million people, including 222 people died, 976 are injured and eight went missing. 10,020 were severely damaged infrastructure and 35,621 are totally damaged.</h5>
+			</div>
+
+			<div class ="symbol1-Magnitude72">
+				<a href="{% url 'casiguran7.3/' %}" class="symbol1-Magnitude72"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Magnitude72">
+				<a href="{% url 'mindoro7.1/' %}" class="symbol2-Magnitude72"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}	

@@ -1,0 +1,71 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+		<aside class="box1">
+
+			<div class="description-Fault">
+				<h2>Fault Lines</h2>
+			</div>
+
+			<div class="divider-Fault" class="image-Fault">
+				<img 
+					class="image-Fault" 
+					src="{% static 'Images/FaultTypes.webp'%}"
+					height="350px"
+					width="450px">
+			</div>
+
+			<div>
+				<h5 class="intro-Fault">A faultline is a rupture zone between two rock blocks. Due to an error, the blocks can move relatively to each other. This movement can be rapid in the form of an earthquake. Deflect lengths range to few milimeters to thousand kilometers. During earthquake, rock on one side of the fault suddenly slides on the other side. Fault plabe can be horizontal, vertical, or any angle in between.</h5>
+			</div>
+
+			<div>
+				<h4 class="meaning-Fault">Normal Fault<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="text-Fault"> An incident fault in which the block above the fault moves downward with respect to the block below. This type of fault occurs in response to expansion.</h5>
+
+			<div>
+				<h4 class="meaning-Fault">Reverse Fault<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="text-Fault"> A reverse fault is a combination of vertical displacement and compressive displacement. Typically, it has a wide range of dip angles. They are often difficult to locate precisely because of widespread landslides.</h5>
+
+			<div>
+				<h4 class="meaning-Fault">Strike-slip Fault<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="text-Fault"> A fault where two blocks are passing each other. Example of this fault is the famous San Andreas fault. </h5>
+			</div>
+		</div>
+                </div>
+		</aside>
+{%endblock%}

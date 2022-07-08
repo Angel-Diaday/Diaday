@@ -1,0 +1,50 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Top Ten Strongest Earthquake to hit the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1968: Magnitude 7.3 in Casiguran</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Casiguran2.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Magnitude73">
+				<h5>Date and Time: August 2, 1968, 4:19 PM PST</h5>
+				<h5>Epicenter: Casiguran, Quezon (now part of Aurora Province)</h5>
+				<h5>Description: Considered as the most severe and most destructive earthquake experience during the last of 20 years. Landslides and fissures were observed in the mountainous part. Tsunami also recorded in the Japan's tide gauge station.</h5>
+				<h5>Damages: It costs of million dollars to the property damage. 270 people were killed and 261 are injured. Building have severe damages like the Philippine Bar Association, and the Old Philippine National Bank.</h5>
+			</div>
+
+			<div class ="symbol1-Magnitude73">
+				<a href="{% url 'luzon7.5/' %}" class="symbol1-Magnitude73"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Magnitude73">
+				<a href="{% url 'bohol7.2/' %}" class="symbol2-Magnitude73"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

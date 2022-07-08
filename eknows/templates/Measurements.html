@@ -1,0 +1,55 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+		<aside class="box1">
+			<div class="description-Measurements">
+				<h2>How do we measure earthquakes?</h2>
+			</div>
+
+			<div class="divider-Measurements" class="image-Measurements">
+				<img 
+					class="image-Measurements" 
+					src="{% static 'Images/Seismograph.webp'%}"
+					height="200px"
+					width="400px">
+				<img 
+					class="image-Measurements" 
+					src="{% static 'Images/Richterscale.webp'%}"
+					height="200px"
+					width="400px">
+			</div>
+
+			<div class="meaning-Measurements">
+				 
+				 <h5>A seismograph is a device used to record the movement of the ground during an earthquake. It is being placed in a ground. The earliest "seismometer" was invented by the Chinese philosopher Zhang Heng in 132 A.D. However, it only indicates than an earthquake is occuring. The first seismograph was developed in 1890.</h5>
+
+ 				<h5>Another instrument is the Richter Scale that is developed by Charles F. Richter. It is used to assess the intensity of earthquake and the amount of energy released. The Richter scale is logarithmic where an integer jump shows a 10x increase. In this case, the wave amplitude is increasing. The wave amplitude of a Level 6 quake is 10 times that of a Level 5 quake, and the amplitude increases 100 times between a Level 7 quake and a Level 9 quake. The amount of energy released increases 31.7 times between integer values.</h5>
+
+			</div>	
+		</aside>
+{%endblock%}

@@ -1,0 +1,56 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+		<aside class="box1">
+			<div class="descriptionTP1">
+				<h2>Focus and Epicenter</h2>
+			</div>
+			<div class="dividerTP1" class="imageTP1">
+				<img 
+					class="imageTP1" 
+					src="{% static 'Images/Focusandepicenter.webp'%}"
+					height="380px"
+					width="450px">
+			</div>
+
+			<div>
+				<h4 class="meaningTP1">Focus<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="textTP1">The focus is also called the hypocenter of an earthquake. Waves is being spread away from the focus into all directions. Focus is placed inside the Earth's crust where the earthquake originates. The point on the Earth’s surface directly above the focus is the epicenter. When energy is released at the focus, seismic waves travel outward from that point in all directions. There are different types of seismic waves, each one traveling at varying speeds and motions. It`s these waves that you feel during an earthquake.</h5>
+			</div>
+
+			<div>
+				<h4 class="meaningTP1">Epicenter<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="textTP1">Directly above the focal point of the earth's surface is the epicenter. Epicenter is usually the place where the waves of the earthquake are the most intense that is considered as the most damaging. But there are some circumstances where it can extend to the plate boundaries. Epicenter is one of many hotspots and can be more damaging elsewhere.</h5>
+			</div>
+		</aside>
+{%endblock%}

@@ -1,0 +1,43 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box-Top_Ten">
+			<div class="description-Top_Ten">
+				<h2>Top Ten Strongest Earthquake to hit the Philippines</h2>
+			</div>
+
+			<div>
+				<img 
+					class="image-Top_Ten"
+					src="{% static 'Images/H9.webp'%}"
+					height="410px"
+					width="390px">
+			</div>
+	
+			<div class="divider-Top_Ten" class="name-Top_Ten">
+				<a href="{% url 'mindanao8/' %}"class="name-Top_Ten">• 1976: Magnitude 8.0 in Mindanao</a>
+				<a href="{% url 'cluzon7.8/' %}" class="name-Top_Ten">• 1990: Magnitude 7.8 in Central Luzon</a>
+				<a href="{% url 'luzon7.5/' %}" class="name-Top_Ten">• 1645: Magnitude 7.5 in Luzon </a>
+				<a href="{% url 'casiguran7.3/' %}" class="name-Top_Ten">• 1968: Magnitude 7.3 in Casiguran</a>
+				<a href="{% url 'bohol7.2/' %}" class="name-Top_Ten">• 2013: Magnitude 7.2 in Bohol</a>
+				<a href="{% url 'mindoro7.1/' %}" class="name-Top_Ten">• 1994: Magnitude 7.1 in Mindoro</a>
+				<a href="{% url 'cvisayas/' %}" class="name-Top_Ten">• 2012: Magnitude 6.9 in Central Visayas</a>
+				<a href="{% url 'smindanao7.5/' %}" class="name-Top_Ten">• 2002: Magnitude 7.5 in Southern Mindanao</a>
+				<a href="{% url 'ilocos/' %}" class="name-Top_Ten">• 1983: Magnitude 6.5 in Ilocos Norte</a>
+				<a href="{% url 'esamar/' %}" class="name-Top_Ten">• 2012: Magnitude 7.6 near Eastern Samar</a>
+			</div>
+		</aside>
+{%endblock%}

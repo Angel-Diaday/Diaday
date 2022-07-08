@@ -1,0 +1,43 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box-Ten_Most">
+			<div class="description-Ten_Most">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+			</div>
+
+			<div>
+				<img 
+					class="image-Ten_Most"
+					src="{% static 'Images/H6.webp'%}"
+					height="410px"
+					width="390px">
+			</div>
+	
+			<div class="divider-Ten_Most" class="name-Ten_Most">
+				<a href="{% url 'sumatra/' %}"class="name-Ten_Most">• Sumatra Earthquake (2012)</a>
+				<a href="{% url 'assamtibet/' %}" class="name-Ten_Most">• Assam Tibet Earthquake (1950)</a>
+				<a href="{% url 'ratislands/' %}" class="name-Ten_Most">• Rat Islands Earthquake (1965)</a>
+				<a href="{% url 'ecuadorcolombia/' %}" class="name-Ten_Most">• Ecuador-Colombia Earthquake (1905)</a>
+				<a href="{% url 'maule/' %}" class="name-Ten_Most">• Maule, Chile Earthquake (2011)</a>
+				<a href="{% url 'kamchatka/' %}" class="name-Ten_Most">• Kamchatka, Russia Earthquake (1952)</a>
+				<a href="{% url 'tohoku/' %}" class="name-Ten_Most">• Tohoku Earthquake(2011)</a>
+				<a href="{% url 'sumatra2/' %}" class="name-Ten_Most">• Sumatra Earthquake (2011)</a>
+				<a href="{% url 'greatalaska/' %}" class="name-Ten_Most">• Great Alaska Earthquake (1964)</a>
+				<a href="{% url 'valdivia/' %}" class="name-Ten_Most">• Valdivia Earthquake (1960)</a>
+			</div>
+		</aside>
+{%endblock%}

@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Great Alaska Earthquake (1964) - 9.2 Magnitude</h3>
+			</div>
+
+			<div  class="image2">
+				<img 
+					class="image2" 
+					src="{% static 'Images/Greatalaska.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Great_Alaska">
+				 
+				 <h5>Date: March 27, 1964</h5>
+				 <h5>Time: 03:36 UTC (17:36 in local time)</h5>
+				 <h5>Epicenter: 10 km east of College Fiord, approximately 90 km west of Valdez, 120 km east of Anchorage.</h5>
+				 <h5>Summary of Damages: The earthquake caused a 8.2-meter-high tsunami and killed 23 of the 68 people who lived there. The port and wharf of Port Valdez collapsed, killing 30 people. A total of 139 people are said to have died. The quake itself killed 15 people and the tsunami in Alaska is 106 people.</h5>
+			</div>
+
+			<div class ="symbol1-Great_Alaska">
+				<a href="{% url 'sumatra2/' %}" class="symbol1-Great_Alaska"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Great_Alaska">
+				<a href="{% url 'valdivia/' %}" class="symbol2-Great_Alaska"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

@@ -1,0 +1,129 @@
+{%extends 'navigation.html' %}
+{%block content%}
+{%load static%}
+		<script>
+			function myFunction1(x){
+			  if (x==0) document.getElementById('myDIV').style.display = "block";
+			  else document.getElementById('myDIV').style.display ="none";
+			  return
+			}
+		</script>
+		<script>
+		  function updateTotal() {
+		    var optionsTotal = 0;
+
+		      function checkHome(){
+		        if (document.getElementById('home1').checked){
+		          optionsTotal += 30;
+		        }
+
+		        if (document.getElementById('home2').checked){
+		          optionsTotal += 20;
+		        }
+
+		        if (document.getElementById('home3').checked){
+		          optionsTotal += 10;
+		        }
+		      }
+
+		      function checkDoor(){
+		        if (document.getElementById('door1').checked){
+		          optionsTotal += 30;
+		        }
+
+		        if (document.getElementById('door2').checked){
+		          optionsTotal += 20;
+		        }
+
+		        if (document.getElementById('door3').checked){
+		          optionsTotal += 10;
+		        }
+		      }
+
+		      function checkCrack(){
+		        if (document.getElementById('crack1').checked){
+		          optionsTotal += 10;
+		        }
+
+		        if (document.getElementById('crack2').checked){
+		          optionsTotal += 20;
+		        }
+
+		        if (document.getElementById('crack3').checked){
+		          optionsTotal += 30;
+		        }
+		      }
+		      checkHome();
+		      checkDoor();
+		      checkCrack();
+
+		      var totalPercentage = optionsTotal
+		      document.getElementById('optionsTotal').innerHTML = optionsTotal + "%";
+		  }
+		</script>
+		<div>
+			<img 
+				class="image" 
+				src="{% static 'Images/H1.webp'%}"
+				height="300px"
+				width="350px">
+
+			<img 
+				class="image" 
+				src="{% static 'Images/H4.webp'%}"
+				height="300px"
+				width="350px" >
+
+
+			<label class="quizlabel">Wanna check how safe you are? Click here</label>
+			<button class="button1" class="buttontext" onclick="myFunction1(0)">Click Me</button>
+
+			<br>
+				<label class="quizlabel1">Rescue someone you know?</label>
+				<button class="button2"><a href="{% url 'index1' %}" class="buttontext">Fill-Up Form</a></button>
+				<div id="myDIV" hidden>
+	  				<div class="formbox"> 
+				        <h3 class="description1">Observe your surroundings</h3>
+				        <p class="divider"></p>
+				        <form name="myForm" id="form22" method="POST" enctype="multipart/form-data" target="_blank" onsubmit="alert('no checking out');return false;">
+				         <fieldset class="formlabel" class="hidden">
+				            <label for="answer" class="formlabel">Is your home is under an active fault?</label>
+
+				           <br>
+		                    <input type="radio" name="home" class="radiobutton" id="home1" value="30" onchange="updateTotal()"> Yes
+		                    <input type="radio" name="home" class="radiobutton" id="home2" value="20" onchange= "updateTotal()"> Don't Know
+		                    <input type="radio" name="home" class="radiobutton" id="home3" value="10" onchange= "updateTotal()"> No
+
+		                    <br><br>
+		                    <label for="answer" class="formlabel">Most of your doors in the house are made of _____</label>
+
+		                    <br>
+		                    <input type="radio" name="door" class="radiobutton" id="door1" value="30" onchange="updateTotal()"> Glass
+		                    <input type="radio" name="door" class="radiobutton" id="door2" value="20" onchange="updateTotal()"> Wood
+		                    <input type="radio" name="door" class="radiobutton" id="door3" value="10" onchange="updateTotal()"> Metal
+
+		                    <br><br>
+		                    <label for="answer" class="formlabel">How many cracks do you have around your house?</label>
+
+		                    <br>
+		                    <input type="radio" name="crack" class="radiobutton" id="crack1" value="10" onchange="updateTotal()"> Less than 10
+		                    <input type="radio" name="crack" class="radiobutton" id="crack2" value="20" onchange="updateTotal()"> 10-15
+		                    <input type="radio" name="crack" class="radiobutton" id="crack3" value="30" onchange="updateTotal()"> More than 15
+
+		                    <br>
+		                    <div id="total">
+		        				<table class="table">
+						          <tr><td>Percentage of Dangerousness</td><td id="optionsTotal"></td></tr>
+						        </table>
+						    </div>
+				  		</fieldset>
+						</form>
+					</div>
+				</div>
+			<div class="description">
+				<h5>Earthquakes is one of the natural disasters that happens in the whole world. It is one of the most disaster that could affect the person's life, but also affect the properties and economy of a country once it occurs. No one is prepared once when the earthquakes happen. It could happen anywhere, anytime with no signs at all.</h5>
+
+				<h5>EQKnows provide the information about earthquakes, especially the histories that occur here in the Philippines. Also, it gives you knowledge enough on how the earthquakes occur and what preparations the people should do. With this kind of information, we would disseminate good information for the people, not only here in the Philippines, but also to the other countries.</h5>
+			</div>		 
+		</div>
+{%endblock%}

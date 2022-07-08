@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+    <script>
+      function myFunction1(x){
+        if (x==0) document.getElementById('Rescue').style.display = "block";
+        else document.getElementById('Rescue').style.display ="none";
+        return
+      }
+      function resetAll() {
+          val = 0;
+          progress = new Set();
+          document.getElementById('progress').value = val;
+      }
+    </script>
+      <div class="description2-About"></div>
+      <div class="box2-About">
+          <div style="margin-top:40;">
+            <img 
+                src="{% static 'Images/1.png'%}"
+                class="Image_format_index"
+                width="400px"
+                height="350px">
+          <div>
+            <p  class="description_index">
+                Natural disaster is one of the happenings that we didnt know when, where and what time may occur since it was truly unpredicted. Due to its cicrumstances, we can't call the authorize people to help us. Therefore, we may now fill up a site where they can send help where a disaster occurs with specific descriptions.</p>
+          </div>
+          </div>
+      </div>
+      <form name="myForm" id="form22" method="POST">
+        {% csrf_token %}
+      <fieldset class="formlabel-About">
+          <legend><h2><center>Reporting Party Information</center></h2></legend>
+            
+          <label for="rparty" id="rparty"> Reporting Party: </label>
+          <input type="text" name="rparty" maxlength="30" class="formbox-About" required placeholder="Please input your name">
+
+          <br>
+          <label for="raddress" id="raddress"> Reporting Address: </label>
+          <input type="text" name="raddress" maxlength="40" class="formbox-About" required placeholder="Please input your address">
+
+          <br>
+          <label for="rcontact" id="rcontact"> Reporting Contact Number: </label>
+          <input type="char" name="rcontact" maxlength="11" class="formbox-About" required placeholder="Please input your contact number">
+
+          <br>
+          <button class="buttonbox" type="submit">Proceed</button>
+      </fieldset>
+
+      <center><h5>Do you want to donate for our victims? Click the Donate button</h5></center>
+      <button class="buttonbox"><a href="" >Donate</a></button>
+{%endblock%}

@@ -1,0 +1,38 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+<table> 
+  <tr>
+      <th>No.</th>
+      <th>Reporting Name</th>
+      <th>Reporting Address</th>
+      <th>Reporting Contact Number</th>
+      <th>Type </th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Contact Number</th>
+      <th>Description</th>
+  </tr>
+  {% for item in victims %}
+  <tr>
+    <td>{{forloop.counter}}</td>
+    <td>{{item.rpartyId.rparty}}</td>
+    <td>{{item.rpartyId.raddress}}</td>
+    <td>{{item.rpartyId.rcontact}}</d>
+    <td>{{item.vtype}}</td>
+    <td>{{item.vdate}}</td>
+    <td>{{item.vtime}}</td>
+    <td>{{item.vname}}</td>
+    <td>{{item.vaddress}}</td>
+    <td>{{item.vcontact}}</td>
+    <td>{{item.vdescription}}</td>
+    <td>{{item.id}}</td>
+    <td><button>Edit</button><button><a href="/delete/{{item.rpartyId.id}}/{{item.id}}">Delete</a></button></td>
+  </tr>
+  {% endfor %}
+
+   
+</table>  
+{%endblock%}

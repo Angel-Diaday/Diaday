@@ -1,0 +1,53 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+			<a href="#" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="#" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="#" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="#" class="aside_content20">• A History of Earthquakes in the Philippines</a>
+				<a href="#" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="#" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+
+		<aside class="box2">
+			<div class="description3">
+				<h2>Ten Deadliest Earthquake</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1908: Messina, Italy</h3>
+			</div>
+
+			<div  class="image2">
+				<img 
+					class="image2" 
+					src="{% static 'Images/Messina.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-1908-Messina">
+				 
+				 <h5>Date: December 28, 1908</h5>
+				 <h5>Time: 04:20 UTC (05:20 in local time) </h5>
+				 <h5>Epicenter: Strait of Messina</h5>
+				 <h5>Magnitude: 7.5  </h5>
+				 <h5>Summary of Damages: Messina earthquake was the most destructive happen in Europe with nearly 200,000 people died. Messina and Reggio Calabria are two cities that are almost destroyed by the earthquake and tsunami. </h5>
+			</div>
+
+			<div class ="symbol1-1908-Messina">
+				<a href="{% url 'kashmir/' %}" class="symbol1-1908-Messina"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-1908-Messina">
+				<a href="{% url 'chimbote/' %}" class="symbol2-1908-Messina"><b> Next ► </b></a>
+			</div>
+            </div>
+		</aside>
+{%endblock%}

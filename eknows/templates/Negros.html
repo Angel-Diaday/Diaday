@@ -1,0 +1,48 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description4">
+				<h2>A History of Earthquake in the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 2012 Negros Oriental Earthquake</h3>
+			</div>
+
+			<div  class="image3">
+				<img 
+					class="image3" 
+					src="{% static 'Images/Negros.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-2012-Negros">
+				 
+				 <h5>Date: February 6, 2012</h5>
+				 <h5>Time: 03:49 UTC (11:49 PST) </h5>
+				 <h5>Epicenter: Approximately 72 kilometers north of Dumaguete City</h5>
+				 <h5>Magnitude: 6.9 </h5>
+				 <h5>Summary of Damages: 52 people died in Negros Island and Cebu Province. With the total of 383 million Philippine pesos cost of damage to the infrastructures.  </h5>
+			</div>
+
+			<div class ="symbol-2012-Negros">
+				<a href="{% url 'laoag/' %}" class="symbol-2012-Negros"><b> ◄ Back</b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

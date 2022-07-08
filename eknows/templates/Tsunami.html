@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+		<aside class="box1">
+			<div class="description0">
+				<h2>Tsunami</h2>
+			</div>
+
+			<div class="divider1" class="image-Definition">
+				<img 
+					class="image-Definition" 
+					src="{% static 'Images/Tsunami.webp'%}"
+					height="410px"
+					width="460px">
+			</div>
+
+			<div class="meaning-Definition">
+				 
+				 <h5>Tsunamis are huge waves that is caused by the earthquakes and volcanic eruption that occur on the ocean floor. At sea depth, the height of tsunami does not increase dramatically. But as the waves move inland, the waves get higher as the depth of the ocean decreases. The speed of a tsunami depends on the depth of the ocean. The tsunami travels in the deep sea at the same speed as a jet plane and slows down when it reach the shallow water. Tsunamis are often referred to as the storm surges, but oceanographers disagree with this thought since tsunami name because the tides have little to do with giant waves.</h5>
+
+				 <h5>Most of the tsunami occurs in the Pacific Ring of Fire, a geologically active region where crustal movements frequently cause of volcanoes and earthquakes. Tsunamis can also caused of the submarine landslides and volcanic eruptions.</h5>
+
+				 <h5>A tsunami is usually composed of a series of waves called a wave train, so when a continuous wave hits the shore, the destructive force is amplified. Those who are experiencing a tsunami should wait for the official news that they can safely return to a vulnerable place. Keep in mind that the danger of the first wave may not have passed.</h5>
+
+			</div>	
+		</aside>
+{%endblock%}

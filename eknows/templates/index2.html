@@ -1,0 +1,56 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+    </div>
+      <div class="description2-About"></div>
+      <div class="box2-About">
+          <div style="margin-top:40;">
+            <img 
+                src="{% static 'Images/2.png'%}"
+                class="Image_format_index"
+                width="400px"
+                height="350px">
+          <div>
+            <p  class="description_index">
+                The victims needs help, it is your turn to make them safe by providing the information of the victims, together with their location and description of their scenario.</p>
+          </div>
+          </div>
+      </div>
+      <form name="myForm" id="form22" method="POST">
+      {% csrf_token %}
+      <fieldset class="formlabel-About" style="margin-top: 30px;">
+          <legend><h2><center>Victim's Information</center></h2></legend>
+                
+            <label for="vtype" id="vtype">Type:</label>
+            <input type="radio" name="rescuetype" value="Rescue Type"> Rescue Type
+            <input type="radio" name="rescuetype" value="Retrieval Type"> Retrieval Type
+
+            <label for="vdate" id="vdate"><h4>Date and Time of the Incident:</h4></label>
+            <label for="vdate" id="vdate">Incident Date:</label>
+            <input type="date" name="vdate">
+            <label for="vtime" id="vtime">Incident Time:</label>
+            <input type="time" name="vtime"> 
+
+            <label for="vname" id="vname"><h4>Victim's Information Needed:</h4></label>
+            <label for="vname" id="vname"> Victim's Name: </label>
+            <input type="text" name="vname" maxlength="40" class="formbox-About" required placeholder="Please input your name">
+
+            <br>
+            <label for="vaddress" id="vaddress"> Victim's Address: </label>
+            <input type="text" name="vaddress" maxlength="40" class="formbox-About" required placeholder="Please input your address">
+
+            <br>
+            <label for="vcontact" id="vcontact"> Victim's Contact Number: </label>
+            <input type="char" name="vcontact" maxlength="11" class="formbox-About" required placeholder="Please input your contact number">
+
+            <br>
+            <label for="vdescription" id="vdescription"> Description: </label>
+            <br>
+            <textarea id="vdescription" name="vdescription" rows="4" column="5000" placeholder="Please input your description">
+            </textarea>
+
+            <br>
+            <button type="submit">Submit</button>
+      </fieldset>
+      </form>
+{%endblock%}

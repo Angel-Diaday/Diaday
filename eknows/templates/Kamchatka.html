@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Kamchatka, Russia Earthquake (1952) - 9.0 Magnitude</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Kamchatka.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Kamchatka">
+				 
+				 <h5>Date: November 4, 1952</h5>
+				 <h5>Time: 16:58 GMT (04:58 in local time)</h5>
+				 <h5>Epicenter: 52.8° N, 159.5° E</h5>
+				 <h5>Summary of Damages: Estimated at $17 million USD, and includes a great deal of damage to shorelines and infrastructure. The highest waves were observed on the north shore of Oahu Island, they were nearly 15 feet in height.</h5>
+			</div>
+
+			<div class ="symbol1-Kamchatka">
+				<a href="{% url 'maule/' %}" class="symbol1-Kamchatka"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Kamchatka">
+				<a href="{% url 'tohoku/' %}" class="symbol2-Kamchatka"><b >Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

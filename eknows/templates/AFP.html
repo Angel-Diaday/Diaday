@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content3">
+			<h4>What should we do when a earthquake occurs?</h4>
+			<ul><a href="{% url 'before/' %}" class="aside_content30">Before</a></ul>
+			<ul><a href="{% url 'during/' %}" class="aside_content30">During</a></ul>
+			<ul><a href="{% url 'after/' %}" class="aside_content30">After</a></ul>
+
+			
+
+			<h4>What kind of essential needs should I bring?</h4>
+			<ul><a href="{% url 'ekit/' %}" class="aside_content30">Emergency Kit</a></ul>
+			<ul><a href="{% url 'aidkit/' %}" class="aside_content30">First Aid Kit</a></ul>
+
+			
+
+			<h4>Government departments that is suppposed to be in charge of disaster</h4>
+			<ul><a href="{% url 'ndrrmc/' %}" class="aside_content30">NDRRMC</a></ul>
+			<ul><a href="{% url 'pagasa/' %}" class="aside_content30">PAGASA</a></ul>
+			<ul><a href="{% url 'phivolcs/' %}" class="aside_content30">PHIVOLCS</a></ul>
+			<ul><a href="{% url 'denr/' %}" class="aside_content30">DENR</a></ul>
+			<ul><a href="{% url 'dost/' %}" class="aside_content30">DOST</a></ul>
+			<ul><a href="{% url 'afp/' %}" class="aside_content30">AFP</a></ul>
+		</div>
+		<aside class="box3">
+			<div class="image-AFP">
+				<img 
+					class="image-AFP" 
+					src="{% static 'Images/AFP.webp'%}"
+					height="260px"
+					width="300px">
+			</div>
+			<div class="meaning1">
+				 <h5>Armed Forces of the Philippines<hr></h5>
+			</div>
+				
+			<div class=text1-AFP>
+				<h5>Date Founded: December 21, 1935</h5>
+				<h5>Chief Staff: Incumbent Lieutenant General Andres Centino, PA</h5>
+				<h5>Headquarters: FP Cruz Avenue cor. Crame Avenue, Camp General Emilio Aguinaldo, Quezon City</h5>
+				<h5>Hotlines: +63 2 8911 6001 loc 6700</h5>
+				<h5>Website: <a href="https://www.afp.mil.ph/index.php" target="_blank">https://www.afp.mil.ph/index.php</a></h5>
+			</div>
+
+			<div class="text2-AFP">
+				<h5>AFP Reservist DRRM units is the reliable first responder groups that will assist DRRM components of LGU during disasters and calamities. It is one of the AFP, OCD (Office of Civil Defense) and the DND (Department of National Defense) proactive measurements for the upcoming disasters.</h5>
+
+				<h5>DRRM Units Integration Program aims to organize and activate the 137 DRRM Companies to assist in building disaster-resilient communities that ensures development. This program seeks to the partnership of AFP and OCD in the provision of manpower training and equipments and in funding support to DRRM Companies nationwide. Another mission is to strengthen and sustain the reserve force capability through individual training.</h5>
+			</div>
+		</aside>
+{%endblock%}

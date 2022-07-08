@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+		<aside class="box1">
+			<div class="description0">
+				<h2>Tectonic Defomation</h2>
+			</div>
+
+			<div class="divider1" class="image-Definition">
+				<img 
+					class="image-Definition" 
+					src="{% static 'Images/Tectonicdeformation.ppm'%}"
+					height="410px"
+					width="450px">
+			</div>
+
+			<div class="meaning-Definition">
+				 
+				<h5>Tectonic deformation is change in the mode of bedding, volume, internal structure, or relative position of a rock body under the deep-seated forces that give rise to the conditions of multi-directional extension, compression or displacement. Tectonic deformation are most apparent in sedimentary rocks, igneous rocks, and metamorphic rocks in the form of various faults. </h5>
+				
+				<h5>Classifications of structural deformations is mainly based on the study of the rock formations. A distinction is made between folds of structural deformations. Folding is due to the plastic deformation of the rock, resulting to the rock fracture that occurs when structural stresses exceed the fracture strength of rock. Individual regions of the crust that differ in geological history and structure are characterized by specific combinations of tectonic deformations that form specific structural regimes.</h5>
+
+				<h5>Individual regions of crust is characterized by the combinations of structural deformations that from its regimes. Appearances, types and size of structural deformation depends on the variety of factors including the physical properties of the rock, including the direction, strength and duration of the active structural force.</h5>
+				
+			</div>
+		</aside>
+{%endblock%}

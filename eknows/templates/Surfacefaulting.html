@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+		<aside class="box1">
+			<div class="description0">
+				<h2>Surface Rupture</h2>
+			</div>
+
+			<div class="divider1" class="image-Definition">
+				<img 
+					class="image-Definition" 
+					src="{% static 'Images/Surfacefaulting.webp'%}"
+					height="410px"
+					width="450px">
+			</div>
+
+			<div class="meaning-Definition">
+				 
+				 <h5>Earthquakes can push and pull the ground, tearing the surface and the ground apart and upward. These are known as "surface ruptures." Surface ruptures may occur suddenly or slowly during an earthquake. In both cases, surface rupture often occurs along existing faults. Surface ruptures can develop mostly near the residential area that causes significant damages on the structure and properties.</h5>
+
+				 <h5>Surface rupture is the offset of the surface when a fault rupture extends to the surface. Structures built on top of the fault are at risk of tearing both sides of the fault slide against each other. Surface ruptures and reverse faults have vertical offsets, and strike-moving faults that creates lateral offsets. Faults can be severely damaged by the surface rupture.</h5>
+
+				 <h5>Surface ruptures change around larger structures because of the ground strength and local comprehension of soil. However, it is not always the case. Surface rupture that intersect lightweight structures most often cause of serious damage.</h5>
+			</div>	
+		</aside>
+{%endblock%}

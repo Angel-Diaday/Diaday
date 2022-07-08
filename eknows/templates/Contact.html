@@ -1,0 +1,46 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content3">
+			<h4>What should we do when a earthquake occurs?</h4>
+			<ul><a href="{% url 'before/' %}" class="aside_content30">Before</a></ul>
+			<ul><a href="{% url 'during/' %}" class="aside_content30">During</a></ul>
+			<ul><a href="{% url 'after/' %}" class="aside_content30">After</a></ul>
+
+			
+
+			<h4>What kind of essential needs should I bring?</h4>
+			<ul><a href="{% url 'ekit/' %}" class="aside_content30">Emergency Kit</a></ul>
+			<ul><a href="{% url 'aidkit/' %}" class="aside_content30">First Aid Kit</a></ul>
+
+			
+
+			<h4>Government departments that is suppposed to be in charge of disaster</h4>
+			<ul><a href="{% url 'ndrrmc/' %}" class="aside_content30">NDRRMC</a></ul>
+			<ul><a href="{% url 'pagasa/' %}" class="aside_content30">PAGASA</a></ul>
+			<ul><a href="{% url 'phivolcs/' %}" class="aside_content30">PHIVOLCS</a></ul>
+			<ul><a href="{% url 'denr/' %}" class="aside_content30">DENR</a></ul>
+			<ul><a href="{% url 'dost/' %}" class="aside_content30">DOST</a></ul>
+			<ul><a href="{% url 'afp/' %}" class="aside_content30">AFP</a></ul>
+
+		</div>
+		<aside class="box3">
+			<div class="meaning-Contact">
+				 <h5>Earthquakes occur in an unexpected time, date and place. It is important to know what to do in case you may experience earthquakes wherever you are. Offices, pulic transportations, public places, mall, park, school, and even at your home may occur earthquake. With this, you will have idea on what to do when the earthquake occurs and what hotline numbers you should call to ask for help. </h5>
+			</div>
+
+			<div>
+				<img 
+					class="image1-Contact" 
+					src="{% static 'Images/Rescue.webp'%}"
+					height="310px"
+					width="350px">
+
+				<img 
+					class="image2-Contact" 
+					src="{% static 'Images/Kit.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+		</aside>
+{%endblock%}

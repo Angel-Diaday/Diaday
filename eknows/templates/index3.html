@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+  </div>
+      <div class="description2-About"></div>
+      <div class="box2-About">
+          <div style="margin-top:40;">
+            <img 
+                src="{% static 'Images/3.png'%}"
+                class="Image_format_index"
+                width="400px"
+                height="350px">
+          <div>
+            <p  class="description_index">
+                The victims are being lost with the sleepless night after the disaster. Therefore, we are open for donations for our victim.</p>
+          </div>
+          </div>
+      </div>
+  <div id="ngoInfo">     
+        <form name="myForm" id="form22" method="POST" action="index2.html">
+        <fieldset class="formlabel-About" style="margin-top: 20px;">
+        <legend><h2><center>Donation Help Center</center></h2></legend>
+              
+          <label for="ngdonator" id="ngdonator"> Donator's Name: </label>
+          <input type="text" name="ngdonator" maxlength="20" class="formbox-About" required placeholder="Please input your name">
+
+          <br>
+          <label for="ngaddress" id="ngaddress"> Donator's Address: </label>
+          <input type="text" name="ngaddress" maxlength="40" class="formbox-About" required placeholder="Please input your address">
+
+          <br>
+          <label for="ngcontact" id="ngcontact"> Donator's Contact Number: </label>
+          <input type="char" name="ngcontact" maxlength="11" class="formbox-About" required placeholder="Please input your contact number">
+
+          <br>
+          <label for="ngname" id="ngname"> Organization Name: </label>
+          <input type="text" name="ngname" maxlength="40" class="formbox-About" required placeholder="Please input organization name">
+
+          <br>
+          <label for="ngplace" id="ngplace"> Headquarters Address: </label>
+          <input type="text" name="ng`place" maxlength="40" class="formbox-About" required placeholder="Please input headquarters address">
+
+          <br>
+          <label for="ngdescription" id="ngdescription"> List of Donations: </label>
+          <br>
+          <textarea id="ngdonation" name="ngdonation" rows="4" column="9000">
+          </textarea>
+          <input type="submit" name="btn" class="buttonbox" value="Donate">
+        </fieldset>
+      </form>
+{%endblock%}

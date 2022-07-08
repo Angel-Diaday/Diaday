@@ -1,0 +1,48 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description3">
+				<h2>Ten Deadliest Earthquake</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1556: Shaanxi, China</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Shaanxi.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Shaanxi">
+				 
+				 <h5>Date: January 23, 1556</h5>
+				 <h5>Time: Estimated to be early in the morning.</h5>
+				 <h5>Epicenter:  Wei River Valley in Shaanxi Province, near Huazhou, Weinan and Huayin.</h5>
+				 <h5>Magnitude: 8.0 </h5>
+				 <h5>Summary of Damages: It estimates around 830,000 people were killed and injured in this earthquake. It reduced the population of two provinces by the 60 percent because of the massive death toll</h5>
+			</div>
+
+			<div class="symbol-Shaanxi">
+				<a href="{% url 'tangshan/' %}" class="symbol-Shaanxi"><b> Next ► </b></a>
+			</div>
+		</div>
+		</aside>
+{%endblock%}

@@ -1,0 +1,40 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+
+		<aside class="box-Six_Facts">
+			<div class="description-Six_Facts">
+				<h2>Six Facts about Earthquake</h2>
+			</div>
+
+			<div class="divider-Six_Facts">
+			</div>
+
+			<div class="meaning-Six_Facts">
+				 <h4>• Natural events such as volcanic eruptions and meteor impacts can cause earthquakes, but the majority of naturally-occurring earthquakes are triggered by the movement of the earth's place.</h4>
+
+				 <h4>• The earth's surface consists of 20 constantly moving plates. The pressure increase from shifting plates can cause the crust to break. This break allows stress to be released as energy, which moves through the earth in the form of waves.</h4>
+
+				 <h4>• Normally, it's not the shaking ground itself that claims lives during an earthquake. Its the associated destruction of man-made structures and the instigation of other natural disasters such as tsunami and landslides.</h4>
+
+				 <h4>• There are millions of earthquakes estimated to occur every year that are too weak to be recorded.</h4>
+
+				 <h4>• If there is a large earthquake, the aftershock sequence will produce many more earthquakes of all magnitudes for months.</h4>
+
+				 <h4>• Almost 80% of all the planet's earthquakes occur along to the rim of the Pacific "Ring of Fire", a region that encircles the Pacific Ocean and is home to 452 volcanoes (over 75% of the world's active and dormant volcanoes)</h4>
+			</div>	
+		</aside>
+{%endblock%}

@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description3">
+				<h2>Ten Deadliest Earthquake</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 2005: Kashmir, Pakistan</h3>
+			</div>
+
+			<div  class="image2">
+				<img 
+					class="image2" 
+					src="{% static 'Images/Kashmir.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-2005-Kashmir">
+				 
+				 <h5>Date: October 8, 2005</h5>
+				 <h5>Time: 03:50 UTC (08:50 in local time) </h5>
+				 <h5>Epicenter: 12 miles northwest of Muzaffarabad.</h5>
+				 <h5>Magnitude: 7.6  </h5>
+				 <h5>Summary of Damages: The earthquake killed more than 80,000 people, with 100,000 injured and three million are homeless. There are 32,000 buildings collapsed in Kashmir.</h5>
+			</div>
+
+			<div class ="symbol1-2005-Kashmir">
+				<a href="{% url 'sichuan/' %}" class="symbol1-2005-Kashmir"><b> ◄ Back</b></a>
+			</div>
+
+			<div class="symbol2-2005-Kashmir">
+				<a href="{% url 'messina/' %}" class="symbol2-2005-Kashmir"><b>Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

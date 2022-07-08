@@ -1,0 +1,51 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Ecuador-Colombia Earthquake (1906) - 8.8 Magnitude</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Ecuador.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Ecuador">
+				 
+				 <h5>Date: February 4, 1965</h5>
+				 <h5>Time: 15:36 UTC</h5>
+				 <h5>Epicenter: Coast of Ecuador, near Esmeraldas, coastal city in Northwest Ecuador</h5>
+				 <h5>Summary of Damages: After the earthquake, a tsunami occur, destroying 49 houses and killed 500 people in Colombia. The damages of infrastructure were cost around one to five million US dollars.</h5>
+			</div>
+
+			<div class ="symbol1-Ecuador">
+				<a href="{% url 'ratislands/' %}" class="symbol1-Ecuador"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Ecuador">
+				<a href="{% url 'maule/' %}" class="symbol2-Ecuador"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

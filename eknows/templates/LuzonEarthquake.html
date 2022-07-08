@@ -1,0 +1,48 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description4">
+				<h2>A History of Earthquake in the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1990 Luzon Earthquake</h3>
+			</div>
+
+			<div  class="image3">
+				<img 
+					class="image3" 
+					src="{% static 'Images/Luzon.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-1990-Luzon">
+				 
+				 <h5>Date: July 16, 1990</h5>
+				 <h5>Time: 08:26 UTC(16:26 PST)</h5>
+				 <h5>Epicenter: Near the town of Rizal, Nueve Ecija, northeast of Cabanatuan</h5>
+				 <h5>Magnitude: 7.8 </h5>
+				 <h5>Summary of Damages: One of the most destructive earthquake occurs resulting to several collapsed buidings with 369 million US dollars of damages and total of 2,412 people are killed.</h5>
+			</div>
+
+			<div class="symbol-1990-Luzon">
+				<a href="{% url 'casiguran/' %}" class="symbol-1990-Luzon"><b> Next ► </b></a>
+			</div>
+		</div>
+		</aside>
+{%endblock%}

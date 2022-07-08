@@ -1,0 +1,67 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+	<div class="aside_content1">
+			<h4>Earthquakes</h4>
+			<ul><a href="{% url 'definition/' %}" class="aside_content10">Definition</a></ul>
+			<ul><a href="{% url 'earthquaketypes/' %}" class="aside_content10">Types&nbsp;of&nbsp;Earthquakes</a></ul>
+			<ul><a href="{% url 'plateboundaries/' %}" class="aside_content10">Types&nbsp;of&nbsp;Plate&nbsp;Boundaries</a></ul>
+			<ul><a href="{% url 'measurements/' %}" class="aside_content10">How&nbsp;do&nbsp;we&nbsp;measure&nbsp;earthquake?</a></ul>
+
+			&nbsp;
+
+			<h4>Parts&nbsp;of&nbsp;an&nbsp;Earthquake</h4>
+			<ul><a href="{% url 'focusepicenter/' %}" class="aside_content10">Focus&nbsp;and&nbsp;Epicenter</a></ul>
+			<ul><a href="{% url 'faultline/' %}" class="aside_content10">Fault&nbsp;Line</a></ul>
+
+			&nbsp;
+
+			<h4>Earthquake&nbsp;Hazards</h4>
+			
+			<ul><a href="{% url 'surfacefaulting/' %}" class="aside_content10">Surface&nbsp;Rupture</a></ul>
+			<ul><a href="{% url 'groundshaking/' %}" class="aside_content10">Ground&nbsp;Shaking</a></ul>
+			<ul><a href="{% url 'landslide/' %}" class="aside_content10">Landslide</a></ul>
+			<ul><a href="{% url 'tectonicdeform/' %}" class="aside_content10">Tectonic&nbsp;Deformation</a></ul>
+			<ul><a href="{% url 'tsunami/' %}" class="aside_content10">Tsunami </a></ul>
+
+		</div>
+
+
+		<aside class="box1">
+			<div class="descriptionTP1">
+				<h2>Types of Plate Boundaries</h2>
+			</div>
+
+			<div class="dividerTP1" class="imageTP1">
+				<img 
+					class="imageTP1" 
+					src="{% static 'Images/PlateBoundaries.webp'%}"
+					height="420px"
+					width="450px">
+			</div>
+
+			<div>
+				<h4 class="meaningTP1">Convergent Boundary<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="textTP1">When two plates come together, this is called a convergent boundary. The impact of a colliding plate can cause edges of the plate to bulge into the mountains. The Pacific Ring of Fire is an example of a convergent plate boundary.</h5>
+			</div>
+			
+			<div>
+				<h4 class="meaningTP1">Divergent Boundary<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="textTP1">When the plates seperate, it referred as the divergent plate edge occurs. An example of a structural plate boundary is the Mid-Atlantic Ridge.</h5>
+			</div>
+
+			<div>
+				<h4 class="meaningTP1">Transform Boundary<hr></h4>
+			</div>
+
+			<div>
+				<h5 class="textTP1">A transform boundary where the two plates slides against each other in the same plane. Strike slip failures occur at transformation boundaries. For example, a system of strike-slip failures forms a transformation boundary for San Andres fault.</h5>
+			</div>
+		</aside>
+{%endblock%}

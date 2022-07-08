@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description4">
+				<h2>A History of Earthquake in the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1983 Laoag Earthquake</h3>
+			</div>
+
+			<div  class="image3">
+				<img 
+					class="image3" 
+					src="{% static 'Images/Laoag.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-1983-Laoag">
+				 
+				 <h5>Date: August 17, 1983</h5>
+				 <h5>Time: 12:17 UTC (20:17 PST) </h5>
+				 <h5>Epicenter: 30 aerial kilometers east-northeast of Laoag City.</h5>
+				 <h5>Magnitude: 6.5 </h5>
+				 <h5>Summary of Damages: Several buildings in seven towns were totally collapsed, including the Laoag Cathedral and Bojeador Lighthouse. 16 people died and 47 are injured. Electricity was also cut off in Laoag after the disaster. </h5>
+			</div>
+
+			<div class ="symbol1-1983-Laoag">
+				<a href="{% url 'bohol/' %}" class="symbol1-1983-Laoag"><b> ◄ Back</b></a>
+			</div>
+
+			<div class="symbol2-1983-Laoag">
+				<a href="{% url 'negros/' %}" class="symbol2-1983-Laoag"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

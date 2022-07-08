@@ -1,0 +1,52 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description4">
+				<h2>A History of Earthquake in the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1968 Casiguran Earthquake</h3>
+			</div>
+
+			<div  class="image3">
+				<img 
+					class="image3" 
+					src="{% static 'Images/Casiguran1.webp'%}"
+					height="310px"
+					width="340px">
+			</div>
+
+			<div class="meaning-1968-Casiguran">
+				 
+				 <h5>Date: August 2, 1968</h5>
+				 <h5>Time: 20:19 UTC (04:19 PST) </h5>
+				 <h5>Epicenter: Casiguran town in Aurora</h5>
+				 <h5>Magnitude: 7.3  </h5>
+				 <h5>Summary of Damages: 268 people are killed. Infrastructures and establishments are destroyed including the Aloha Theater, National Library and the Liwayway Hotel in Manila.</h5>
+			</div>
+
+			<div class ="symbol1-1968-Casiguran">
+				<a href="{% url 'luzonearthquake/' %}" class="symbol1-1968-Casiguran"><b> ◄ Back</b></a>
+			</div>
+
+			<div class="symbol2-1968-Casiguran">
+				<a href="{% url 'morogulf/' %}" class="symbol2-1968-Casiguran"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

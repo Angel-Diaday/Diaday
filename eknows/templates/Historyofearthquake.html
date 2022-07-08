@@ -1,0 +1,39 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box-History1">
+			<div class="description-History1">
+				<h2>A History of Earthquake in the Philippines</h2>
+			</div>
+
+			<div>
+				<img 
+					class="image-History1"
+					src="{% static 'Images/H3.webp'%}"
+					height="410px"
+					width="390px">
+			</div>
+	
+			<div class="divider-History" class="name-History1">
+				<a href="{% url 'luzonearthquake/' %}"class="name-History1">• 1990 Luzon Earthquake</a>
+				<a href="{% url 'casiguran/' %}" class="name-History1">• 1968 Casiguran Earthquake</a>
+				<a href="{% url 'morogulf/' %}" class="name-History1">• 1976 Moro Gulf Earthquake </a>
+				<a href="{% url 'bohol/' %}" class="name-History1">• 2013 Bohol Earthquake</a>
+				<a href="{% url 'laoag/' %}" class="name-History1">• 1963 Laoag Earthquake</a>
+				<a href="{% url 'negros/' %}" class="name-History1">• 2012 Negros Oriental Earthquake</a>
+			</div>
+		</aside>
+{%endblock%}

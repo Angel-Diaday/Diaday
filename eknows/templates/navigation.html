@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="utf-8">
+    <meta name="Homepage" content="width=device-width, initial-scale:1.0">
+    <link rel="stylesheet" href="{% static 'Images/Logo.png'%}">
+    <link rel="icon" type="image/icon type" href="{% static 'Images/Logo.png'%}">
+    <title>EKnows</title>
+    <style>
+      table, td, th {
+        border: 1px solid;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+</style>
+  </head> 
+  <body>
+    <div class="bgmenu">
+      <a href="" class="menutext"> Home </a> &nbsp; &nbsp;
+      <a href="" class="menutext"> Earthquakes </a> &nbsp; &nbsp;
+      <a href="" class="menutext"> History and Trivias </a> &nbsp; &nbsp;
+      <a href="" class="menutext"> Contact</a> &nbsp; &nbsp;
+      <a href="" class="menutext"> About Us</a> &nbsp; &nbsp;
+    </div>
+
+    <div class="navBG">
+      <img
+        class="logo"
+        src="{% static 'Images/Logo.png'%}"
+        alt="EKnows"
+        height="70px">
+
+    </div>
+   {%block content%}
+
+   {%endblock%}
+   </body>
+</html>

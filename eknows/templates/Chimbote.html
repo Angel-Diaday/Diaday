@@ -1,0 +1,48 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+			<a href="#" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="#" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="#" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="#" class="aside_content20">• A History of Earthquakes in the Philippines</a>
+				<a href="#" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="#" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description3">
+				<h2>Ten Deadliest Earthquake</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1970: Chimbote, Peru</h3>
+			</div>
+
+			<div  class="image2">
+				<img 
+					class="image2" 
+					src="{% static 'Images/Chimbote.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-1970-Chimbote">
+				 
+				 <h5>Date: May 31, 1970</h5>
+				 <h5>Time: 03:23 UTC (03:23 in local time) </h5>
+				 <h5>Epicenter: 15 miles west of Chimbote</h5>
+				 <h5>Magnitude: 7.9  </h5>
+				 <h5>Summary of Damages: 70,000 people are killed and 50,000 are injured leaving 800,000 people are being homeless after the disaster. In term of infrastructures, 200,000 homes and buildings are roughly destroyed.</h5>
+			</div>
+
+			<div class ="symbol-1970-Chimbote">
+				<a href="{% url 'messina/' %}" class="symbol-1970-Chimbote"><b> ◄ Back</b></a>
+			</div>
+		</div>
+		</aside>
+{%endblock%}

@@ -1,0 +1,46 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content3">
+			<h4>What should we do when a earthquake occurs?</h4>
+			<ul><a href="{% url 'before/' %}" class="aside_content30">Before</a></ul>
+			<ul><a href="{% url 'during/' %}" class="aside_content30">During</a></ul>
+			<ul><a href="{% url 'after/' %}" class="aside_content30">After</a></ul>
+
+			
+
+			<h4>What kind of essential needs should I bring?</h4>
+			<ul><a href="{% url 'ekit/' %}" class="aside_content30">Emergency Kit</a></ul>
+			<ul><a href="{% url 'aidkit/' %}" class="aside_content30">First Aid Kit</a></ul>
+
+			
+
+			<h4>Government departments that is suppposed to be in charge of disaster</h4>
+			<ul><a href="{% url 'ndrrmc/' %}" class="aside_content30">NDRRMC</a></ul>
+			<ul><a href="{% url 'pagasa/' %}" class="aside_content30">PAGASA</a></ul>
+			<ul><a href="{% url 'phivolcs/' %}" class="aside_content30">PHIVOLCS</a></ul>
+			<ul><a href="{% url 'denr/' %}" class="aside_content30">DENR</a></ul>
+			<ul><a href="{% url 'dost/' %}" class="aside_content30">DOST</a></ul>
+			<ul><a href="{% url 'afp/' %}" class="aside_content30">AFP</a></ul>
+
+		</div>
+		<aside class="box3">
+			<div class="description-During" class="divider3">
+				<h2>What to do during an earthquake?</h2>
+				<p class="divider3"></p>
+			</div>
+
+			<div class="meaning-During">
+				 <h5>• Know the basic steps; which is the duck, cover, and hold.</h5>
+				 <h5>• Hide in the table and stop posting on social media sites.</h5>
+				 <h5>• Cover your head up onto the nape a book or any other sturdy things to prevent head injury.</h5>
+				 <h5>• If indoors, find and take cover a desk, table and other furniture to prevent you from falling objects.</h5>
+				 <h5>• Don't move while it is still shaking. Stay where you are, and think about your plan of action after the shaking, then move.</h5>
+				 <h5>• Use stairs and emergency exits. It is not safe to use a elevator because power lines may broke and you may stuck inside the elevator.</h5>
+				 <h5>• If outdoors, go to an empty field. Avoid tall buildings, power lines and tall trees.</h5>
+				 <h5>• If driving, check your surroundings if it is safe to stop your vehicle. Stay inside your vehicle until the shaking stops.</h5>
+				 <h5>• If you are driving in a overpass, underpass and a bridge. Get out of the car immediately.</h5>
+				 <h5>• If power lines have fallen across, do not touch any kind of metals. Get away from the power lines and call help immediately.</h5>
+			</div>
+		</aside>
+{%endblock%}

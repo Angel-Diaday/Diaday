@@ -1,0 +1,47 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Ten Most Powerful Earthquake in Earth History</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• Valdivia Earthquake (1960) - 9.0 Magnitude</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/Valdivia.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Valdivia">
+				 
+				 <h5>Date: May 22, 1960</h5>
+				 <h5>Time: 19:11 GMT (15:11 in local time)</h5>
+				 <h5>Epicenter: 100 miles off the coast of Chile, parallel to the city of Valdivia</h5>
+				 <h5>Summary of Damages: Main tsunami devastated the Chilean coast and crossed the Pacific Ocean. Total death toll is estimated to be 1,000 to 6,000. About 3,000 people were injured. It lost two million homes and killed about 1,655. The economic damage amounted to US 550 million dollars.</h5>
+			</div>
+
+			<div class ="symbol-Valdivia">
+				<a href="{% url 'greatalaska/' %}" class="symbol-Valdivia"><b> ◄ Back </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%}

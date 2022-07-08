@@ -1,0 +1,36 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+
+		<aside class="box2">
+
+			<div>
+				<img 
+					class="image1-History" 
+					src="{% static 'Images/H5.webp'%}"
+					height="470px"
+					width="430px">
+
+			</div>
+
+			<div class="meaning-History">
+					<h5>In this page, we will tackle the facts, history and the trivias about earthquake including the destructive earthquakes that occur in the Philippines where many infrastructures have severely damaged and loss of lives.</h5>
+
+					<h5>It also states here the largest and strongest earthquake occurs in the world. With these, it would be a big help for the people who are searching about the earthquake occurs in a certain place</h5>
+				
+			</div>
+		</aside>
+{%endblock%}

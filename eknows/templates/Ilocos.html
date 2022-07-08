@@ -1,0 +1,50 @@
+{%extends 'navigation.html'%}
+{%block content%}
+{%load static%}
+		<div class="aside_content2">
+			<h4>Trivia</h4>
+				<a href="{% url 'sixfacts/' %}" class="aside_content20">• Six Facts about Earthquakes</a>		
+				<a href="{% url 'tenpowerful/' %}" class="aside_content20">• Ten Most Powerful Earthquakes in the Earth History</a>		
+				<a href="{% url 'tendeadliest/' %}" class="aside_content20">• Ten Deadliest Earthquake</a>		
+
+			&nbsp;
+
+			<h4>History</h4>
+				<a href="{% url 'historyearthquake/' %}" class="aside_content20">• A History of Earthquakes in the Philippines</a>		
+				<a href="{% url 'tenstrongest/' %}" class="aside_content20">• Top Ten Strongest Earthquake to hit the Philippines</a>
+			<a href="{% url 'eightcities/' %}" class="aside_content20">• Top Eight Most Disaster Prone Cities in Philippines</a>
+		</div>
+		<aside class="box2">
+			<div class="description2">
+				<h2>Top Ten Strongest Earthquake to hit the Philippines</h2>
+	
+			<div class="divider2"></div>
+			<div class="name2">
+				<h3>• 1983: Magnitude 6.5 in Ilocos Norte</h3>
+			</div>
+
+			<div>
+				<img 
+					class="image2" 
+					src="{% static 'Images/NIlocos.webp'%}"
+					height="310px"
+					width="350px">
+			</div>
+
+			<div class="meaning-Magnitude65">
+				<h5>Date and Time: August 17, 1983, 8:17 PM PST</h5>
+				<h5>Epicenter: 30 aerial kilometers, northeast of Laoag</h5>
+				<h5>Description: Laoag is identified as the regional drill site due to the vulnerability to tsunami and considered as the most severe earthquake in northwest in 52 years.</h5>
+				<h5>Damages: Most of the heavily damaged structures are those infrastructures near the Laoag river which is the flood plain and stream channels. All the buildings near the area are totally wrecked. Some of the buildings that considered severe structural damages are the Philippine Veterans Bank Building and the San Nicolas Church and Bell Tower. It caused 16 people died and 47 are injured.</h5>
+			</div>
+
+			<div class ="symbol1-Magnitude65">
+				<a href="{% url 'cvisayas/' %}" class="symbol1-Magnitude65"><b> ◄ Back </b></a>
+			</div>
+
+			<div class="symbol2-Magnitude65">
+				<a href="{% url 'esamar/' %}" class="symbol2-Magnitude65"><b> Next ► </b></a>
+			</div>
+			</div>		
+		</aside>
+{%endblock%} 	
